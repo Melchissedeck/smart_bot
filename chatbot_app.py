@@ -14,6 +14,10 @@ def generate_response(user_input):
     chat_response = client.chat.complete(
         model=model,
         messages=[
+ {
+                "role": "system",
+                "content": "Répondez en alexandrin (12 syllabes par ligne).",
+            },
             {
                 "role": "user",
                 "content": user_input,
@@ -51,3 +55,4 @@ for sender, message in st.session_state.chat_history:
 
 # Intégrer une mémoire au bot 
 # Protéger la clé API 
+# Donner un style au Bot pour qu'il parle uniquement en alexandrin
