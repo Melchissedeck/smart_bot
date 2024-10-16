@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 from mistralai import Mistral
 
 # Configuration de l'API
@@ -15,10 +14,6 @@ def generate_response(user_input):
     chat_response = client.chat.complete(
         model=model,
         messages=[
- {
-                "role": "system",
-                "content": "Répondez en alexandrin (12 syllabes par ligne).",
-            },
             {
                 "role": "user",
                 "content": user_input,
