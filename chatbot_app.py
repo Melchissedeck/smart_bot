@@ -7,7 +7,7 @@ from mistralai import Mistral
 model = "mistral-large-latest"
 
 # Initialisation du client Mistral
-client = Mistral(api_key= mistral_key)
+client = Mistral(api_key=mistral_key)
 
 # Fonction pour générer une réponse à partir de l'API Mistral
 def generate_response(user_input):
