@@ -3,11 +3,11 @@ from mistralai import Mistral
 
 # Configuration de l'API
 
-
+api_key = st.secrets["Mistral"]["mistral_key"]
 model = "mistral-large-latest"
 
 # Initialisation du client Mistral
-client = Mistral(api_key=mistral_key)
+client = Mistral(api_key= api_key)
 
 # Fonction pour générer une réponse à partir de l'API Mistral
 def generate_response(user_input):
