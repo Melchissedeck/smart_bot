@@ -3,11 +3,11 @@ import os
 from mistralai import Mistral
 
 # Configuration de l'API
-api_key = "9F8Lnhk8zfkxKxj3EfCyY3j9RzIaVwjB"
+
 model = "mistral-large-latest"
 
 # Initialisation du client Mistral
-client = Mistral(api_key=api_key)
+client = Mistral(api_key=mistral)
 
 # Fonction pour générer une réponse à partir de l'API Mistral
 def generate_response(user_input):
