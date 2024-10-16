@@ -3,7 +3,7 @@ import os
 from mistralai import Mistral
 
 # Configuration de l'API
-
+mistral_key= "y7GQjNIa1WurtKhILiekJBsCXWkXbZSw"
 model = "mistral-large-latest"
 
 # Initialisation du client Mistral
